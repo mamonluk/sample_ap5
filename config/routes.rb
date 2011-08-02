@@ -6,6 +6,8 @@ SampleApp5::Application.routes.draw do
   #   get "pages/contact"
   #   get "pages/about"
   
+  resources :users
+  
   root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
