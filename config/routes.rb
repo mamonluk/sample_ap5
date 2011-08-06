@@ -8,7 +8,7 @@ SampleApp5::Application.routes.draw do
   
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
- 
+  resources :microposts, :only => [:create, :destroy]
   
   root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
