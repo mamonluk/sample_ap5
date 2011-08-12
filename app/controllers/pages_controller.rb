@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  require 'envolve_chat.rb'
   def home
     @title= "Home"
     if signed_in?
@@ -13,6 +14,9 @@ class PagesController < ApplicationController
   
   def about
    @title = "About"
+   
+
+   
   end
   
   def help

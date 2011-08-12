@@ -1,5 +1,5 @@
 module ApplicationHelper
-
+require 'envolve_chat'
   # Return a title on a per-page basis.
   def logo
     logo = image_tag("logo-1.png", :alt => "Sample App", :class => "round") 
@@ -13,4 +13,6 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
+  
+  
 end

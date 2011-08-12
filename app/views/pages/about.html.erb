@@ -4,23 +4,18 @@
   is a project to make a book and screencasts to teach web development
   with <a href="http://rubyonrails.org/">Ruby on Rails</a>. This
   is the sample application for the tutorial.
+
+
+  <%= EnvolveChat::ChatRenderer.get_html("27047-wrt59HumQdoAQq3gppcnXx60hL2E3RA9",
+  {
+  :first_name => 'Robert',
+  :last_name => 'Smith',
+  :pic => 'http://www.example.com/pic.png',
+  :is_admin => true,
+  :profile_html => 'hello kitty'
+  }
+  )  %>
+  
+end
 </p>
 
-
-<script type="text/javascript">
-       alert('ALERT!')
-</script>
-
-<script type="text/javascript" src="swfobject.js"></script>    
-  <div id="ytapiplayer">
-    You need Flash player 8+ and JavaScript enabled to view this video.
-  </div>
-
-  <script type="text/javascript">
-
-    var params = { allowScriptAccess: "always" };
-    var atts = { id: "myytplayer" };
-    swfobject.embedSWF("http://www.youtube.com/e/IylXiW3QyTU?version=3&enablejsapi=1&playerapiid=ytplayer",
-                       "ytapiplayer", "425", "356", "8", null, null, params, atts);
-
-  </script>
